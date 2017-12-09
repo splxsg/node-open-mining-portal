@@ -7,7 +7,7 @@
     "clustering": {
         "enabled": true,
         "forks": "auto"
-    },
+    },123
 
     "defaultPoolConfigs": {
         "blockRefreshInterval": 1000,
