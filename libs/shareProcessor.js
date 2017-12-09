@@ -69,8 +69,9 @@ module.exports = function(logger, poolConfig){
     this.handleShare = function(isValidShare, isValidBlock, shareData){
 
         var redisCommands = [];
-
+        
         if (isValidShare){
+            console.info(shareData.blockHashInvalid);
             redisCommands.push(['hincrbyfloat', coin + ':shares:roundCurrent', shareData.worker, shareData.difficulty]);
             redisCommands.push(['hincrby', coin + ':stats', 'validShares', 1]);
         }
@@ -85,6 +86,7 @@ module.exports = function(logger, poolConfig){
         redisCommands.push(['zadd', coin + ':hashrate', dateNow / 1000 | 0, hashrateData.join(':')]);
 
         if (isValidBlock){
+
             redisCommands.push(['rename', coin + ':shares:roundCurrent', coin + ':shares:round' + shareData.height]);
             redisCommands.push(['sadd', coin + ':blocksPending', [shareData.blockHash, shareData.txHash, shareData.height].join(':')]);
             redisCommands.push(['hincrby', coin + ':stats', 'validBlocks', 1]);
