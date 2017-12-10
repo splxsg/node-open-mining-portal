@@ -55,14 +55,14 @@
     },
 
     "mposMode": {
-        "enabled": false,
+        "enabled": true,
         "host": "127.0.0.1",
         "port": 3306,
-        "user": "me",
-        "password": "mypass",
-        "database": "ltc",
-        "checkPassword": true,
-        "autoCreateWorker": false
+        "user": "root",
+        "password": "123,",
+        "database": "lbrycoinpool",
+        "checkPassword": false,
+        "autoCreateWorker": true
     }
 
 }
