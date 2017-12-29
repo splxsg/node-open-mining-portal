@@ -1,0 +1,197 @@
+{
+    "enabled": true,
+    "coin": "zcoin.json", 
+
+    "address": "a8hHZz8N8NDhVrCvGGC4SK29TmSCoP5qMs",
+
+    "rewardRecipients": {
+	"aQ18FBVFtnueucZKeVg4srhmzbpAeb1KoN": 4,
+ 	"aCAgTPgtYcA4EysU4UKC86EQd5cTtHtCcr": 4,
+    "aHu897ivzmeFuLNB6956X6gyGeVNHUBRgD": 4,
+	"a1kCCGddf5pMXSipLVD9hBG2MGGVNaJ15U": 4,
+	"a1HwTdCmQV3NspP2QqCGpehoFpi8NY4Zg3": 4
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 30,
+        "minimumPayment": 0.01,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 10456,
+            "user": "litecoinserver",
+            "password": "litecoinserver123"
+        }
+    },
+
+    "ports": {
+        "3001": {
+           "diff": 0.1,
+            "varDiff": {
+                "minDiff": 0.1,
+                "maxDiff": 0.1,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+         "3002": {
+           "diff": 0.2,
+            "varDiff": {
+                "minDiff": 0.2,
+                "maxDiff": 0.2,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+         "3010": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 3.0,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+ 	"3020": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 3.2,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+         "3030": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 3.4,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }, 
+         "3040": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 3.6,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }, 
+         "3050": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 4.0,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+       }, 
+         "3060": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 4.2,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }, 
+         "3018": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 4.4,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }, 
+         "3028": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 3.0,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }, 
+         "3038": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 4.0,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }, 
+         "3048": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 3.6,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }, 
+         "3058": {
+           "diff": 5.0,
+            "varDiff": {
+                "minDiff": 3.8,
+                "maxDiff": 5.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+	"28888": {
+           "diff": 2.0,
+            "varDiff": {
+                "minDiff": 2.0,
+                "maxDiff": 2.0,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 10456,
+            "user": "litecoinserver",
+            "password": "litecoinserver123"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 19333,
+        "disableTransactions": false
+    },
+
+    "mposMode": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "root",
+        "password": "123,",
+        "database": "zcoinpool",
+        "checkPassword": false,
+        "autoCreateWorker": true
+    }
+
+}
